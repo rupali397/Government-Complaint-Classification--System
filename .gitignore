@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+.ipynb_checkpoints/
+
+# Backup model
+models/complaint_classifier_backup.joblib
+
+# Dataset and CSV files
+English/
+Hindi/
+additional_complaints.csv
+bulk_test.csv
+combined_complaints.csv
+complaints.csv
+metadata.csv
+metadata_backup.csv
+predicted_complaints.csv
