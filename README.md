@@ -1,6 +1,14 @@
 # Government Complaint Classification System
 
-An ML-based application that automatically classifies government complaints into different categories using Natural Language Processing (NLP) and Machine Learning.
+An ML-powered application that automatically classifies government complaints into different categories using Natural Language Processing (NLP) and Machine Learning.
+
+## Live Demo
+
+[Open Government Complaint Classification App](https://government-complaint-classifier.streamlit.app/)
+
+## GitHub Repository
+
+[View Source Code on GitHub](https://github.com/rupali397/Government-Complaint-Classification--System)
 
 ## 1. Project Overview
 
@@ -10,7 +18,7 @@ The Government Complaint Classification System helps categorize citizen complain
 
 Government departments receive complaints related to different public services. Manually categorizing these complaints can be time-consuming.
 
-This project uses Machine Learning to predict the appropriate complaint category from the complaint text.
+This project uses Machine Learning to predict the appropriate complaint category from complaint text.
 
 ## 3. Technologies Used
 
@@ -18,7 +26,8 @@ This project uses Machine Learning to predict the appropriate complaint category
 - Pandas
 - NumPy
 - Scikit-learn
-- TF-IDF Vectorization
+- Natural Language Processing (NLP)
+- Word TF-IDF and Character TF-IDF
 - Logistic Regression
 - Streamlit
 - Matplotlib
@@ -35,7 +44,7 @@ The model supports six categories:
 - Sanitation
 - Water Supply
 
-The dataset contains English and Hindi complaints.
+The dataset contains complaints in English and Hindi.
 
 ## 5. Machine Learning Workflow
 
@@ -45,14 +54,14 @@ The dataset contains English and Hindi complaints.
 4. Train and evaluate multiple ML classifiers.
 5. Select Logistic Regression as the final model.
 6. Save the trained model using Joblib.
-7. Use Streamlit to make predictions.
+7. Deploy the application using Streamlit.
 
 ## 6. Model Performance
 
 | Metric | Result |
 |---|---:|
-| Training samples | 188 |
-| Testing samples | 30 |
+| Training Samples | 188 |
+| Testing Samples | 30 |
 | Test Accuracy | 70.00% |
 | Correct Predictions | 21 / 30 |
 
@@ -60,13 +69,13 @@ The dataset contains English and Hindi complaints.
 
 ## 7. Application Features
 
-- Single complaint classification
-- Bulk complaint classification through CSV upload
-- Downloadable prediction results
-- Model performance dashboard
-- Classification report
-- Confusion matrix heatmap
-- Insufficient information detection
+- Single Complaint Classification
+- Bulk Complaint Classification through CSV Upload
+- Downloadable Prediction Results
+- Model Performance Dashboard
+- Classification Report
+- Confusion Matrix Heatmap
+- Insufficient Information Detection
 
 ## 8. Project Structure
 
@@ -74,26 +83,43 @@ The dataset contains English and Hindi complaints.
 Government_Complaints_Dataset/
 │
 ├── app.py
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
 ├── src/
-│   └── train_model.py
+│   ├── train_model.py
+│   ├── analyze.py
+│   ├── combine_dataset.py
+│   ├── predict_complaint.py
+│   └── predict_csv.py
 │
-├── models/
-│   ├── complaint_classifier.joblib
-│   ├── complaint_classifier_backup.joblib
-│   └── evaluation_results.joblib
-│
-└── README.md
+└── models/
+    ├── complaint_classifier.joblib
+    └── evaluation_results.joblib
 ```
 
 ## 9. Installation and Setup
 
-Install the required packages:
+Clone the repository:
 
 ```bash
-pip install pandas numpy scikit-learn streamlit matplotlib joblib
+git clone https://github.com/rupali397/Government-Complaint-Classification--System.git
 ```
 
-Run the application from the main project folder:
+Navigate to the project folder:
+
+```bash
+cd Government-Complaint-Classification--System
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
 
 ```bash
 python -m streamlit run app.py
@@ -111,8 +137,8 @@ The application will open in your web browser.
 
 ## 11. Project Status
 
-**Status:** Working ML application with single and bulk prediction features and a performance dashboard.
+**Status:** Deployed ML application with single and bulk prediction features and a performance dashboard.
 
 ---
 
-*Developed as a Machine Learning and NLP learning project.*
+Developed as a Machine Learning and NLP learning project.
