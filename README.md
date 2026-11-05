@@ -77,7 +77,18 @@ The dataset contains complaints in English and Hindi.
 - Confusion Matrix Heatmap
 - Insufficient Information Detection
 
-## 8. Project Structure
+## 8. Application Screenshots
+
+### Home - Single Complaint Prediction
+![Home](screenshots/home.png)
+
+### Bulk CSV Prediction
+![Bulk Prediction](screenshots/test_csv.png)
+
+### Model Performance Dashboard
+![Model Performance](screenshots/model_prediction.png)
+
+## 9. Project Structure
 
 ```text
 Government_Complaints_Dataset/
@@ -99,7 +110,7 @@ Government_Complaints_Dataset/
     └── evaluation_results.joblib
 ```
 
-## 9. Installation and Setup
+## 10. Installation and Setup
 
 Clone the repository:
 
@@ -127,7 +138,7 @@ python -m streamlit run app.py
 
 The application will open in your web browser.
 
-## 10. Future Improvements
+## 11. Future Improvements
 
 - Increase dataset size and diversity.
 - Improve Hindi and Hinglish complaint classification.
@@ -135,7 +146,7 @@ The application will open in your web browser.
 - Improve model accuracy through systematic experimentation.
 - Test performance on unseen real-world complaints.
 
-## 11. Project Status
+## 12. Project Status
 
 **Status:** Deployed ML application with single and bulk prediction features and a performance dashboard.
 
