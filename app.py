@@ -107,7 +107,7 @@ if st.button("Predict Category"):
         sorted_probabilities = sorted(probabilities, reverse=True)
         margin = sorted_probabilities[0] - sorted_probabilities[1]
 
-        if confidence < 0.25 or margin < 0.05:
+        if confidence < 0.15:
             st.warning(
                 "Insufficient Information: Please provide more details."
             )
