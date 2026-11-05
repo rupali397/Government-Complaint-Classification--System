@@ -4,7 +4,7 @@ An ML-powered application that automatically classifies government complaints in
 
 ## Live Demo
 
-[Open Government Complaint Classification App](https://government-complaint-classifier.streamlit.app/)
+[Open Government Complaint Classification App](https://rupali397-government-complaint-classification--syste-app-g6jutc.streamlit.app/)
 
 ## GitHub Repository
 
